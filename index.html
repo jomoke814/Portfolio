@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="shortcut icon" href="android-chrome-512x512.png" type="image/x-icon">
+    <link rel="stylesheet" href="css/reset.css">
     <link rel="stylesheet" href="css/styles.css">
     <script src="js/port.js" defer></script>
     <title>Portfolio</title>
@@ -23,24 +24,34 @@
         </div>
     </nav>
     <div class="content">
-        <main class="contanier">
-            <div class="hero">
-                <h1>Hey, My Name is</h1>
-                <h2>John Omoke.</h2>
-                <h3>I build interactive websites that work across different platforms and devices.</h3>
+        <section class="header">
+            <div class="container">
+                <div class="hero">
+                    <h1>Hey, My Name is</h1>
+                    <h2>John Omoke.</h2>
+                    <h3>I build interactive websites that work across different platforms and devices.</h3>
+                </div>
+                <div class="hero-left">
+                    <img class="image" src="images/learning.png" alt="">
+                </div>
             </div>
-            <div class="image">
-                <img src="images/learning.png" alt="">
-            </div>
-        </main>
+        </section>
         <section class="about">
             <h2 class="section-title">About Me</h2>
-            <div class="about-image">
-                <img src="images/hinata.jpg" alt="profile-image">
-            </div>
-            <div class="content">
-                <p>I'm a front-end developer with extensive experience building websites. I create powerful & rich interactive websites that work across all platforms and devices.</p>
-                <p>My websites are mostly hand coded using Html, Css and Javascript with a focus on progressive enhancement, I look for creative ways to push the boundaries of a websites front-end code without sacrificing browser support and performance.</p>
+            <div class="container">
+                <div class="about-image">
+                    <img class="profile-img" src="images/hinata.jpg" alt="profile-image">
+                    <div class="name">
+                        <h1>John Omoke</h1>
+                    </div>
+                    <div class="about-social">
+                        <img src="images/icons8-github-75.png" alt="github">
+                        <img src="images/icons8-linkedin-circled-100.png" alt="linkedin">
+                    </div>
+                </div>
+                <div class="about-content">
+                    <p>I'm a front-end developer with extensive experience building websites. I create powerful & rich interactive websites that work across all platforms and devices. My websites are mostly hand coded using Html, Css and Javascript with a focus on progressive enhancement, I look for creative ways to push the boundaries of a websites front-end code without sacrificing browser support and performance.</p>
+                </div>
             </div>
         </section>
         <!-- <section class="skills">
