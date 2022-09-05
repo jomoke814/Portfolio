@@ -114,8 +114,9 @@ body {
 
 .about .container{
     display: flex;
-    align-items: center;
-    justify-content: space-between;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: flex-start;
     padding: 30px 50px;
 }
 
@@ -124,8 +125,8 @@ body {
 }
 
 .about-image .profile-img{
-    height: 200px;
-    width: 200px;
+    height: 250px;
+    width: 250px;
     border: 3px solid #64ffda;
     border-radius: 80%;
 }
@@ -139,7 +140,7 @@ body {
     flex-direction: row;
     height: 50px;
     width: 50px;
-    margin: 0 40px;
+    margin: 0 70px;
     gap: 20px;
 }
 
@@ -149,4 +150,28 @@ body {
     border-radius: 10px;
     font-size: 18px;
     font-weight: bold;
+}
+
+.skills {
+    min-height: 450px;
+}
+
+.skills .container{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    margin-top: 100px;
+}
+
+.box-image h1{
+    color: #8892b0;
+    font-size: 18px;
+    font-weight: bold;
+    text-align: center;
+}
+
+.box-image .js{
+    height: 120px;
+    width: 120px;
 }
