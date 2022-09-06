@@ -295,6 +295,11 @@ body {
     color: #64ffda;
 }
 
+.btn-btn:hover {
+    color: #fff;
+    background-color: #64ffda;
+}
+
 .footer {
     background-color: #0e131a;
     display: flex;
