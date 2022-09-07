@@ -163,7 +163,7 @@ body {
 
 .about-content {
     color: #8892b0;
-    margin: 70px;
+    margin-left: 50px;
     border-radius: 10px;
     font-size: 18px;
     font-weight: bold;
@@ -322,12 +322,12 @@ body {
     gap: 30px;
 }
 
-.social-link ul li .icons{
+.social-link a .icons{
     height: 50px;
     width: 50px;
 }
 
-.social-link ul li .icons:hover {
+.social-link a .icons:hover {
     background-color: #64ffda;
     border-radius: 10px;
 }
