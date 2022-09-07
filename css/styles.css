@@ -189,6 +189,10 @@ body {
     text-align: center;
 }
 
+.box-image h1:hover {
+    color: #64ffda;
+}
+
 .box-image .skill-image {
     border-radius: 10px;
 }
@@ -241,6 +245,7 @@ body {
     height: 360px;
     width: 300px;
     padding: 10px;
+    margin: 20px 0 20px;
 }
 
 .projects-card .project-folder{
