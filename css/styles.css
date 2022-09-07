@@ -195,8 +195,7 @@ body {
 
 .box-image .skill-image:hover{
     border-radius: 10px;
-    height: 200px;
-    width: 200px;
+    transform: scale(1.2);
 }
 
 .box-image .js{
@@ -252,6 +251,7 @@ body {
 
 .project-folder .icons:hover{
     background-color: #fff;
+    transform: scale(1.1)
 }
 
 .project-image .website-image{
@@ -260,6 +260,10 @@ body {
     width: 250px;
     border: 2px solid #64ffda;
     border-radius: 10px;
+}
+
+.project-image .website-image:hover, .project-content p:hover {
+    transform: scale(1.1)
 }
 
 .project-content p{
