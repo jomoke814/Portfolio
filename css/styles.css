@@ -207,12 +207,25 @@ body {
     min-height: 450px;
 }
 
-.projects .section-header{
+.projects .section-header, .load-more{
     color: #8892b0;
     display: flex;
     align-items: center;
     justify-content: center;
     font-size: 20px;
+}
+
+.projects .load-more .show-more {
+    color: #64ffda;
+    background-color: #0a192f;
+    border: 1px solid #64ffda;
+    border-radius: 10px;
+    padding: 1.25rem;
+    margin-top: 20px;
+}
+
+.projects .load-more .show-more:hover {
+    transform: scale(1.1);
 }
 
 .projects-container {
@@ -307,6 +320,7 @@ body {
 .btn-btn:hover {
     color: #fff;
     background-color: #64ffda;
+    transform: scale(1.1);
 }
 
 .footer {
