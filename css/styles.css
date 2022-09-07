@@ -143,6 +143,7 @@ body {
 }
 
 .about-image .name{
+    color: #8892b0;
     text-align: center;
     margin-bottom: 5px;
 }
@@ -224,7 +225,6 @@ body {
 }
 
 .projects-card{
-    border: 2px solid #64ffda;
     border-radius: 10px;
     height: 360px;
     width: 300px;
@@ -236,8 +236,12 @@ body {
     flex-direction: row;
     height: 50px;
     width: 50px;
-    gap: 180px;
+    gap: 50px;
     margin-bottom: 10px;
+}
+
+.project-folder {
+    margin: 0 20px;
 }
 
 .project-folder .icons {
@@ -254,6 +258,7 @@ body {
     margin-left: 15px;
     height: 250px;
     width: 250px;
+    border: 2px solid #64ffda;
     border-radius: 10px;
 }
 
