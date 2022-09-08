@@ -182,6 +182,18 @@ body {
     margin-top: 100px;
 }
 
+.box-image {
+    height: 180px;
+    width: 150px;
+    padding: 10px;
+    border-radius: 10px;
+    box-shadow: 0 5px 10px rgba(0,0,0,.2);
+}
+
+.box-image:hover {
+    transform: scale(1.1);
+}
+
 .box-image h1{
     color: #8892b0;
     font-size: 18px;
@@ -195,11 +207,6 @@ body {
 
 .box-image .skill-image {
     border-radius: 10px;
-}
-
-.box-image .skill-image:hover{
-    border-radius: 10px;
-    transform: scale(1.2);
 }
 
 .box-image .js{
@@ -233,19 +240,22 @@ body {
 }
 
 .projects-container {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: space-around;
-    margin-top: 50px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    gap: 20px;
 }
 
 .projects-card{
     border-radius: 10px;
     height: 360px;
     width: 300px;
+    margin: 30px;
     padding: 10px;
-    margin: 20px 0 20px;
+    box-shadow: 0 5px 10px rgba(0,0,0,.2);
+}
+
+.projects-card:hover {
+    transform: scale(1.1);
 }
 
 .projects-card .project-folder{
@@ -272,16 +282,20 @@ body {
     transform: scale(1.1)
 }
 
+.projects-image {
+    margin-bottom: 20px;
+    overflow: hidden;
+    height: 250px;
+    border-radius: 5px;
+}
+
 .project-image .website-image{
     margin-left: 15px;
     height: 250px;
     width: 250px;
+    object-fit: cover;
     border: 2px solid #64ffda;
     border-radius: 10px;
-}
-
-.project-image .website-image:hover, .project-content p:hover {
-    transform: scale(1.1)
 }
 
 .project-content p{
@@ -323,8 +337,6 @@ body {
 }
 
 .btn-btn:hover {
-    color: #fff;
-    background-color: #64ffda;
     transform: scale(1.1);
 }
 
