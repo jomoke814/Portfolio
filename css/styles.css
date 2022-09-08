@@ -371,3 +371,35 @@ body {
     background-color: #64ffda;
     border-radius: 10px;
 }
+
+/* Media queries */
+@media(max-width: 768px) {
+    .body {
+        text-align: center;
+    }
+    
+    .header .container {
+        flex-direction: column;
+        padding: 30px;
+        text-align: center;
+    }
+    .about .container {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+    }
+    .skills .container {
+        display: flex;
+        flex-direction: column;
+        gap: 50px;
+        margin-top: 20px;
+    }
+    .projects .projects-container {
+        margin-left: 50px;
+    }
+}
+
+
+
+
+
