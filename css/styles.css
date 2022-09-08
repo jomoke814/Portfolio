@@ -25,7 +25,7 @@ body {
 .navbar {
     background: #0e131a;
     color: #fff;
-    height: 60px;
+    height: 70px;
     padding: 20px 20px;
 }
 
@@ -374,28 +374,80 @@ body {
 
 /* Media queries */
 @media(max-width: 768px) {
-    .body {
-        text-align: center;
+    html,body {
+        height: 100%;
+        width: 100%;
+        margin: 0;
+        padding: 0;
+        overflow-x: hidden;
     }
-    
+
+    .hamburger .bar {
+    display: block;
+    width: 25px;
+    height: 3px;
+    margin: 5px auto;
+    -webkit-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+    background-color: #fff;
+    }
+
+    .hamburger.active .bar:nth-child(2) {
+        opacity: 0;
+    }
+
+    .hamburger.active .bar:nth-child(1) {
+        transform: translateY(8px) rotate(45deg);
+    }
+
+    .hamburger.active .bar:nth-child(3) {
+        transform: translateY(-8px) rotate(-45deg);
+    }
+
+    .nav{
+        position: fixed;
+        left: -100%;
+        top: 70px;
+        gap: 0;
+        flex-direction: column;
+        background-color: #0e131a;
+        width: 100%;
+        text-align: center;
+        transition: 0.3s;
+    }
+
+    .nav-item {
+        margin:16px 0
+    }
+
+    .nav.active{
+        left: 0;
+    }
+
     .header .container {
         flex-direction: column;
         padding: 30px;
         text-align: center;
     }
+
     .about .container {
         display: flex;
         flex-direction: column;
         text-align: center;
     }
+    .about .about-image {
+        margin: 20px;
+    }
+
     .skills .container {
         display: flex;
         flex-direction: column;
         gap: 50px;
         margin-top: 20px;
     }
-    .projects .projects-container {
-        margin-left: 50px;
+    
+    .contact {
+        text-align: center;
     }
 }
 
