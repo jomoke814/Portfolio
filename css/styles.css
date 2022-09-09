@@ -430,6 +430,11 @@ body {
         text-align: center;
     }
 
+    .header .image {
+        height: 300px;
+        width: 300px;
+    }
+
     .about .container {
         display: flex;
         flex-direction: column;
