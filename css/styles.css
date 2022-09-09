@@ -252,6 +252,13 @@ body {
     margin: 30px;
     padding: 10px;
     box-shadow: 0 5px 10px rgba(0,0,0,.2);
+    display: none;
+}
+
+.projects-card:nth-child(1),
+.projects-card:nth-child(2),
+.projects-card:nth-child(3) {
+    display: inline-block;
 }
 
 .projects-card:hover {
