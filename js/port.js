@@ -3,6 +3,12 @@ const nav = document.querySelector('.nav');
 const showBtn = document.querySelector('.show-more');
 let currentItem = 3;
 
+//scroll effect to navbar
+window.addEventListener("scroll", function(){
+    const navbar = document.querySelector(".navbar");
+    navbar.classList.toggle("sticky", window.scrollY > 0);
+})
+
 hamburger.addEventListener('click', () => {
     hamburger.classList.toggle("active");
     nav.classList.toggle("active");

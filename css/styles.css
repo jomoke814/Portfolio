@@ -27,6 +27,10 @@ body {
     color: #fff;
     height: 70px;
     padding: 20px 20px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
 }
 
 .navbar .logo {
@@ -95,6 +99,7 @@ body {
     height: 400px;
     width: 400px;
     border-radius: 10px;
+    margin-top: 50px;
 }
 
 .header .container{
@@ -432,6 +437,7 @@ body {
     }
 
     .header .container {
+        margin-top: 60px;
         flex-direction: column;
         padding: 30px;
         text-align: center;
